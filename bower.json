@@ -1,0 +1,26 @@
+{
+  "name": "bondera",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bingorabbit/bondera",
+  "authors": [
+    "Ibrahim A Mohamed <bingorabbit@gmail.com>"
+  ],
+  "description": "Bondera is a simple AngularJS application, to be introduced in the up coming CAT Scope'14, a CAT Reloaded event.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "AngularJS",
+    "Bootstrap",
+    "CATReloaded",
+    "CATSCope"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
