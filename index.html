@@ -2,16 +2,43 @@
 <html ng-app="BonderaApp">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>bondera .. Taxi Drivers! DA*N YOU!</title>
+    <title>بُنديرة .. ماتبصش علي عجلها لتجيب اجلها..</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-rtl/dist/css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <div id="header"></div>
+<div class="container-fluid">
+    <div id="header" class="text-center">
+        <h1 class="" style="display: inline"><strong>بُنديرة</strong></h1>
+        <h2 class="" style="display: inline">
+            ماتبصش علي عجلها لتجيب اجلها..
+        </h2>
+    </div>
     <div id="content" ng-view></div>
-    <div id="footer"></div>
 </div>
+<footer id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <p class="col-md-3 col-xs-12 col-sm-12">
+                تطوير <a href="http://bingorabbit.com" target="_blank">عم/إبراهيم عبد الفتاح محمد</a>
+            </p>
+            <span class="col-md-2 col-xs-12 col-sm-12 col-md-offset-2">
+                <!--<img src="http://www.plateshack.com/y2k/Egypt/egypt2010red.jpg" style="width: 3em;"/>-->
+                <span class="">
+                    <span class="col-xs-6 text-left orange">Egypt</span>
+                    <span class="col-xs-6 text-right orange">مصر</span>
+                </span>
+                <span class="">
+                    <span class="col-xs-6 text-left white text-center" style="border-right: darkgray 1px solid">2015</span>
+                    <span class="col-xs-6 text-right white text-center">ك ا ت</span>
+                </span>
+            </span>
+            <p class="col-md-3 col-xs-12 col-sm-12 col-md-offset-2">طلع الجدع قال كلمته .. وهى دي كانت تهمته</p>
+        </row>
+    </div>
+</footer>
 <script type="application/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 <script type="application/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script type="application/javascript" src="bower_components/angular/angular.js"></script>

@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@font-face {
+    font-family: 'Dimnah';
+    font-style: normal;
+    font-weight: 700;
+    url(fonts/ae_Dimnah.ttf) format('truetype');
+}
+body * {
+    direction: rtl;
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#header {
+    padding: 4em 0em;
+    background: url("images/ogra.png") repeat right top;
+    height: 12em;
+}
+#header h1, #header h2 {
+    background-color:#FFF;
+    margin: 0em auto;
+}
+#header h1 {
+    background-color:#000;
+    color: gold;
+    font-family: 'Droid Arabic Kufi', serif;
+    width: 5.55em;
+    padding: 0.5em;
+}
+#header h2 {
+    font-family: Dimnah, serif;
+    width: 10.65em;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+#content {
+    margin-top: 2em;
+}
+.orange {
+    background-color: orangered;
+}
+.white {
+    background-color: white;
+}
+.plate {
+    border: darkgray 1px solid;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 6em;
+}
+#footer {
+    background: url("images/ogra.png") repeat right top;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 6em;
+    padding-top: 20px;
+}
+#footer p {
+    background-color: #fff;
+    font-family: Dimnah, serif;
+}
