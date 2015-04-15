@@ -1,15 +1,31 @@
-<div class="row">
-<form class="form-horizontal col-sm-4 col-sm-offset-4">
-    <div class="form-group">
+<div class="row" ng-controller="MainCtrl">
+<form class="form-horizontal col-sm-4 col-sm-offset-4 dimnah" name="fareForm" novalidate ng-submit="calculateFare()">
+    <div class="form-group" ng-class="{'has-error': distanceError}">
         <label for="distance" class="col-sm-5 control-label dimnah larger-size">مشيت قد إيه؟ (مسافة)</label>
         <div class="col-sm-7">
-            <input type="text" class="form-control dimnah larger-size" id="distance" placeholder="مشيت قد إيه؟ (مسافة)">
+            <input type="number"
+                   min="0"
+                   step="any"
+                   class="form-control dimnah input-lg"
+                   id="distance"
+                   placeholder="مشيت قد إيه؟ (مسافة)"
+                   name="distance"
+                   ng-model="distance" required>
+            <span class="text-danger" ng-show="distanceError">طب إيه؟</span>
         </div>
     </div>
-    <div class="form-group">
+    <div class="form-group" ng-class="{'has-error': timeIntervalError}">
         <label for="timeInterval" class="col-sm-5 control-label dimnah larger-size">خدت قد إيه ؟ (وقت)</label>
         <div class="col-sm-7">
-            <input type="text" class="form-control dimnah larger-size" id="timeInterval" placeholder="خدت قد إيه ؟ (وقت)">
+            <input type="number"
+                   min="0"
+                   step="any"
+                   class="form-control dimnah input-lg"
+                   id="timeInterval"
+                   placeholder="خدت قد إيه ؟ (وقت)"
+                   name="timeInterval"
+                   ng-model="timeInterval" required>
+            <span class="text-danger" ng-show="timeIntervalError">مش ياللا؟</span>
         </div>
     </div>
     <div class="form-group">
