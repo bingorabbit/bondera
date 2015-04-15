@@ -4,6 +4,10 @@
     font-family: 'Dimnah';
     font-style: normal;
     font-weight: 700;
+    src: url(fonts/ae_Dimnah.eot),
+    url(fonts/ae_Dimnah.eot?#iefix) format('embedded-opentype'),
+    url(fonts/ae_Dimnah.woff) format('woff'),
+    url(fonts/ae_Dimnah.woff2) format('woff2'),
     url(fonts/ae_Dimnah.ttf) format('truetype');
 }
 body * {
@@ -30,7 +34,6 @@ body * {
     padding: 0.5em;
 }
 #header h2 {
-    font-family: Dimnah, serif;
     width: 10.65em;
     padding: 0.5em;
     margin-top: 2em;
@@ -46,6 +49,12 @@ body * {
 }
 .plate {
     border: darkgray 1px solid;
+}
+.dimnah {
+    font-family: Dimnah, serif;
+}
+.larger-size {
+    font-size: larger;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
