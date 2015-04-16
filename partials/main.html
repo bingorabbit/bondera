@@ -14,7 +14,7 @@
                            placeholder="(مسافة)"
                            name="distance"
                            ng-model="distance" required>
-                    <span class="text-danger" ng-show="distanceError">طب إيه؟</span>
+                    <span class="text-danger" ng-show="distanceError">-- طب إيه؟</span>
                 </div>
             </div>
             <div class="form-group" ng-class="{'has-error': timeIntervalError}">
@@ -29,7 +29,7 @@
                            placeholder="(وقت)"
                            name="timeInterval"
                            ng-model="timeInterval" required>
-                    <span class="text-danger" ng-show="timeIntervalError">مش ياللا؟</span>
+                    <span class="text-danger" ng-show="timeIntervalError">-- مش ياللا؟</span>
                 </div>
             </div>
             <div class="form-group">
@@ -39,7 +39,7 @@
             </div>
         </form>
     </div>
-    <div class="row fare text-center" ng-show="fareReady">
+    <div class="row fare text-center" ng-show="fareReady && !distanceError && !timeIntervalError">
         <div class="col-sm-4 col-sm-offset-4 dimnah">
             اﻷجرة <code>{{ fare | fareFormat:'pounds' }}</code> جنيه و <code>{{ fare | fareFormat:'piasters' }}</code> قرش..كرمشله <code>{{ fare | ceil }}</code> جنيه وإخلص..
         </div>
