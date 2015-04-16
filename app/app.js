@@ -1,4 +1,4 @@
-var BonderaApp = angular.module('BonderaApp', ['ngRoute', 'bonderaControllers']);
+var BonderaApp = angular.module('BonderaApp', ['ngRoute', 'bonderaControllers', 'bonderaFilters']);
 
 BonderaApp.config(['$routeProvider', function($routeProvider){
 

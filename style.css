@@ -39,7 +39,7 @@ body * {
     margin-top: 2em;
 }
 #content {
-    margin-top: 2em;
+    margin-top: 6em;
 }
 .orange {
     background-color: orangered;
@@ -55,6 +55,9 @@ body * {
 }
 .larger-size {
     font-size: larger;
+}
+.fare {
+    font-size: 1.5em;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -78,4 +81,9 @@ body {
 #footer p {
     background-color: #fff;
     font-family: Dimnah, serif;
+}
+@media(max-width: 600px) {
+    #footer {
+        height: 9em;
+    }
 }
