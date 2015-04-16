@@ -3,38 +3,38 @@
         <form class="form-horizontal col-sm-4 col-sm-offset-4 dimnah" name="fareForm" novalidate
               ng-submit="calculateFare()">
             <div class="form-group" ng-class="{'has-error': distanceError}">
-                <label for="distance" class="col-sm-5 control-label dimnah larger-size">مشيت قد إيه؟ (مسافة)</label>
+                <label for="distance" class="col-sm-6 control-label dimnah larger-size">مشيت قد إيه؟ (مسافة)</label>
 
-                <div class="col-sm-7">
+                <div class="col-sm-6">
                     <input type="number"
                            min="0"
                            step="any"
                            class="form-control dimnah input-lg"
                            id="distance"
-                           placeholder="مشيت قد إيه؟ (مسافة)"
+                           placeholder="(مسافة)"
                            name="distance"
                            ng-model="distance" required>
                     <span class="text-danger" ng-show="distanceError">طب إيه؟</span>
                 </div>
             </div>
             <div class="form-group" ng-class="{'has-error': timeIntervalError}">
-                <label for="timeInterval" class="col-sm-5 control-label dimnah larger-size">خدت قد إيه ؟ (وقت)</label>
+                <label for="timeInterval" class="col-sm-6 control-label dimnah larger-size">خدت قد إيه ؟ (وقت)</label>
 
-                <div class="col-sm-7">
+                <div class="col-sm-6">
                     <input type="number"
                            min="0"
                            step="any"
                            class="form-control dimnah input-lg"
                            id="timeInterval"
-                           placeholder="خدت قد إيه ؟ (وقت)"
+                           placeholder="(وقت)"
                            name="timeInterval"
                            ng-model="timeInterval" required>
                     <span class="text-danger" ng-show="timeIntervalError">مش ياللا؟</span>
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-sm-4 col-sm-offset-5">
-                    <button type="submit" class="btn btn-default btn-lg dimnah larger-size">بُنديرتك يا برنس</button>
+                <div class="col-sm-6 col-sm-offset-6">
+                    <button type="submit" class="btn btn-default btn-lg btn-block dimnah larger-size">بُنديرتك يا برنس</button>
                 </div>
             </div>
         </form>
