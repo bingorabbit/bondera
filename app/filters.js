@@ -3,7 +3,6 @@ bonderFilters = angular.module('bonderaFilters', []);
 bonderFilters.filter('fareFormat', function(){
     return function(input, unit){
         input = input || 0;
-        console.log(input)
         if (unit == 'pounds'){
             return Math.floor(input);
         } else if (unit === 'piasters'){

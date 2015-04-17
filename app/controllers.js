@@ -1,6 +1,6 @@
 var bonderaControllers = angular.module('bonderaControllers', []);
 
-bonderaControllers.controller('MainCtrl', function($scope){
+bonderaControllers.controller('MainController', function($scope){
     $scope.fareReady = false;
     $scope.calculateFare = function(){
         $scope.distanceError = ($scope.fareForm.$submitted || $scope.fareForm.distance.$touched) && $scope.fareForm.distance.$error.required

@@ -1,4 +1,4 @@
-<div ng-controller="MainCtrl">
+<div ng-controller="MainController">
     <div class="row">
         <form class="form-horizontal col-sm-4 col-sm-offset-4 dimnah" name="fareForm" novalidate
               ng-submit="calculateFare()">
@@ -11,7 +11,7 @@
                            step="any"
                            class="form-control dimnah input-lg"
                            id="distance"
-                           placeholder="(مسافة)"
+                           placeholder="(كيلو متر)"
                            name="distance"
                            ng-model="distance" required>
                     <span class="text-danger" ng-show="distanceError">-- طب إيه؟</span>
@@ -26,7 +26,7 @@
                            step="any"
                            class="form-control dimnah input-lg"
                            id="timeInterval"
-                           placeholder="(وقت)"
+                           placeholder="(دقيقة)"
                            name="timeInterval"
                            ng-model="timeInterval" required>
                     <span class="text-danger" ng-show="timeIntervalError">-- مش ياللا؟</span>
